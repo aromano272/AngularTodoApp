@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head lang="en">
+  <meta charset="utf-8">
+  <title>TODO List App</title>
+  <link rel="stylesheet" href="vendor/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="app/css/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+</head>
+<body ng-app="app">
+
+<section class="app">
+  
+
+  <header class="page-header">
+    <h3 class="page-header__heading">My App</h3>
+  </header>
+
+  <section class="app__wrapper" ng-controller="HeaderHolderController as todoList">
+    
+    <ul class="app__item-holder">
+      
+      <li class="app__item-holder__header" ng-repeat="header in todoList.headers">
+        <h3>{{ header.headerTitle }}</h3>
+        <h4>{{ header.description }}</h4>
+        <div ng-repeat="items in header.todo">
+          <label><input type="checkbox" name="" id="">{{ items.itemTitle }}</label>
+        </div>
+      </li>
+
+    </ul>
+
+  </section>
+
+
+
+</section>
+
+<script src="vendor/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="vendor/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="vendor/bower_components/angularjs/angular.min.js"></script>
+<script src="vendor/bower_components/angular-route/angular-route.min.js"></script>
+<script src="app/js/app.js"></script>
+</body>
+</html>

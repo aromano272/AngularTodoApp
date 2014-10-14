@@ -1,0 +1,21 @@
+[
+  { 
+    "headerTitle": "Grocery List", 
+    "description": "Stuff to buy at grocery market", 
+    "todo": ["1","2","3"]
+  },
+  { 
+    "headerTitle": "Shopping List", 
+    "description": "Get these from the shopping", 
+    "todo": [
+      {
+        "itemTitle": "bring apples",
+        "checked": false
+      },
+      {
+        "itemTitle": "bring oranges",
+        "checked": false
+      }
+    ]
+  }
+]
