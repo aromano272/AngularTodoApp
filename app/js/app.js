@@ -4,7 +4,7 @@ var app = angular.module("app", []);
 app.controller("HeaderHolderController", ["$scope", "$http", function($scope, $http) {
   var todoList = this;
 
-  $http.get("/app/todo.json").success(function(data) {
+  $http.get("app/todo.json").success(function(data) {
     todoList.headers = data;
   });
 
@@ -31,7 +31,7 @@ app.controller("NewItemController", ["$scope", "$http", function($scope, $http) 
     newItem.description = description;
     newItem.tasks = tasks;
     // push object to json file
-    $http.post("/newtask.json", JSON.stringify(newItem));
+    $http.post("newtask.json", JSON.stringify(newItem));
   }
 
   $(document).on("keydown", ".item-holder__new-tasks input:last-child", function() {
