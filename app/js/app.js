@@ -31,10 +31,7 @@ app.controller("NewItemController", ["$scope", "$http", function($scope, $http) 
     newItem.description = description;
     newItem.tasks = tasks;
     // push object to json file
-    var dataPost = $http.push("/app/todo.json", newItem);
-    dataPost.success(function(data, status, headers, config) {
-      $scope.message = data;
-    });
+    $http.post("/newtask.json", JSON.stringify(newItem));
   }
 
   $(document).on("keydown", ".item-holder__new-tasks input:last-child", function() {
