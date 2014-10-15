@@ -1,0 +1,30 @@
+<div class="new-item__wrapper modal fade" id="new-item" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" ng-controller="NewItemController as NewItemCtrl">
+<div class="modal-dialog">
+<div class="modal-content">
+
+<li class="item-holder__header" ng-show=true>
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+    <h4 class="modal-title" id="myModalLabel">Add new to do list</h4>
+  </div>
+
+  <div class="modal-body">
+    <div class="">
+      <input type="text" ng-model="header" class="item-holder__new-header form-control" placeholder="Add a title for your new list" required>
+      <input type="text" ng-model="description" class="item-holder__new-description form-control" placeholder="Add a description for your new list" required>
+    </div>
+
+    <div class="item-holder__new-tasks">
+      <input type="text" ng-repeat="item in newTasks" placeholder="Add a task you have to do" class="form-control">
+    </div>
+  </div>
+</li>
+
+<div class="modal-footer">
+  <button class="new-item__cancel btn btn-danger" data-dismiss="modal" ng-click="reset()">Close</button>
+  <button class="new-item__save btn btn-success" ng-click="save()">Save</button>
+</div>
+
+</div>
+</div>
+</div>

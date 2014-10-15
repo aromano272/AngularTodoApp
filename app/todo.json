@@ -2,7 +2,7 @@
   { 
     "headerTitle": "Grocery List", 
     "description": "Stuff to buy at grocery market", 
-    "todo": [
+    "tasks": [
       {
         "itemTitle": "laundry",
         "checked": true
@@ -12,13 +12,13 @@
   { 
     "headerTitle": "Shopping List", 
     "description": "Get these from the shopping", 
-    "todo": [
+    "tasks": [
       {
-        "itemTitle": "bring apples",
+        "taskTitle": "bring apples",
         "checked": false
       },
       {
-        "itemTitle": "bring oranges",
+        "taskTitle": "bring oranges",
         "checked": false
       }
     ]

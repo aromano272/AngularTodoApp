@@ -26,20 +26,13 @@
         <span class="item-holder__arrow glyphicon glyphicon-chevron-right"></span>
       </li>
       
-      <div class="new-item__wrapper">
-        <li class="item-holder__header panel panel-info" ng-show=true>
-          <input type="text" class="item-holder__new-header panel-heading" placeholder="Add a title for your new list"></input>
-          <input type="text" class="item-holder__new-description panel-body" placeholder="Add a description for your new list"></input>
-        </li>
-        <div style="text-align: right">
-          <button class="new-item__cancel btn btn-danger">Cancel</button>
-          <button class="new-item__save btn btn-success">Save</button>
-        </div>
-      </div>
-
     </ul>
+    
 
-    <button class="add-item btn btn-success pull-right">+</button>
+    <add-new-item></add-new-item>
+    
+
+    <button class="add-item btn btn-success pull-right" data-toggle="modal" data-target="#new-item">+</button>
 
 
   </section>

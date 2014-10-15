@@ -29,4 +29,10 @@ ul li {
   display: block;
   width: 100%; }
 
+.input-group {
+  width: 100%; }
+
+.item-holder__new-tasks {
+  margin-top: 20px; }
+
 /*# sourceMappingURL=main.css.map */
