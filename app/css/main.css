@@ -1,3 +1,32 @@
+ul li {
+  list-style: none; }
 
+.item-holder {
+  padding: 20px;
+  margin: 0 auto; }
+
+.item-holder__header {
+  position: relative; }
+
+.item-holder__arrow {
+  position: absolute;
+  top: 60%;
+  right: 20px;
+  font-size: 1.2em; }
+
+.add-item {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  line-height: 1.2;
+  margin-right: 20px; }
+
+.item-holder__new-header,
+.item-holder__new-description {
+  display: block;
+  width: 100%; }
 
 /*# sourceMappingURL=main.css.map */

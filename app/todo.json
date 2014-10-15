@@ -2,7 +2,12 @@
   { 
     "headerTitle": "Grocery List", 
     "description": "Stuff to buy at grocery market", 
-    "todo": ["1","2","3"]
+    "todo": [
+      {
+        "itemTitle": "laundry",
+        "checked": true
+      }
+    ]
   },
   { 
     "headerTitle": "Shopping List", 

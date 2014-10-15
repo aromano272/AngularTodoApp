@@ -2,3 +2,37 @@
 // @import '2-base/-base-index'
 // @import '3-modules/-modules-index'
 // @import '4-pages/-pages-index'
+@import "1-tools/bourbon/bourbon"
+
+
+
+ul li
+  list-style: none
+
+
+.item-holder
+  padding: 20px
+  margin: 0 auto
+
+.item-holder__header
+  position: relative
+
+.item-holder__arrow
+  position: absolute
+  top: 60%
+  right: 20px
+  font-size: 1.2em
+
+.add-item
+  +size(60px)
+  border-radius: 50%
+  color: white
+  font-size: 40px
+  text-align: center
+  line-height: 1.2
+  margin-right: 20px
+
+.item-holder__new-header,
+.item-holder__new-description
+  display: block
+  width: 100%

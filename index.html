@@ -18,17 +18,29 @@
 
   <section class="app__wrapper" ng-controller="HeaderHolderController as todoList">
     
-    <ul class="app__item-holder">
+    <ul class="item-holder">
       
-      <li class="app__item-holder__header" ng-repeat="header in todoList.headers">
-        <h3>{{ header.headerTitle }}</h3>
-        <h4>{{ header.description }}</h4>
-        <div ng-repeat="items in header.todo">
-          <label><input type="checkbox" name="" id="">{{ items.itemTitle }}</label>
-        </div>
+      <li class="item-holder__header panel panel-info" ng-repeat="header in todoList.headers">
+        <div class="panel-heading">{{ header.headerTitle }}</div>
+        <div class="panel-body">{{ header.description }}</div>
+        <span class="item-holder__arrow glyphicon glyphicon-chevron-right"></span>
       </li>
+      
+      <div class="new-item__wrapper">
+        <li class="item-holder__header panel panel-info" ng-show=true>
+          <input type="text" class="item-holder__new-header panel-heading" placeholder="Add a title for your new list"></input>
+          <input type="text" class="item-holder__new-description panel-body" placeholder="Add a description for your new list"></input>
+        </li>
+        <div style="text-align: right">
+          <button class="new-item__cancel btn btn-danger">Cancel</button>
+          <button class="new-item__save btn btn-success">Save</button>
+        </div>
+      </div>
 
     </ul>
+
+    <button class="add-item btn btn-success pull-right">+</button>
+
 
   </section>
 
@@ -41,5 +53,8 @@
 <script src="vendor/bower_components/angularjs/angular.min.js"></script>
 <script src="vendor/bower_components/angular-route/angular-route.min.js"></script>
 <script src="app/js/app.js"></script>
+<!-- <div ng-repeat="items in header.todo">
+  <label><input type="checkbox" name="" id="">{{ items.itemTitle }}</label>
+</div> -->
 </body>
 </html>
